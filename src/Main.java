@@ -39,6 +39,6 @@ public class Main {
             reverseFullName[i] = temp;
         }
         System.out.print(reverseFullName);
-        System.out.println();
+        System.out.println( );
     }
 }
