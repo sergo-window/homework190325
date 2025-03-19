@@ -32,9 +32,13 @@ public class Main {
 
         System.out.println("Задача 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
-            System.out.print(reverseFullName[i]);
+        char temp;
+        for (int i = 0; i < reverseFullName.length / 2; i++) {
+            temp = reverseFullName[reverseFullName.length - i - 1];
+            reverseFullName[reverseFullName.length - i - 1] = reverseFullName[i];
+            reverseFullName[i] = temp;
         }
+        System.out.print(reverseFullName);
         System.out.println();
     }
 }
